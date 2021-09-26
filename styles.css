@@ -6,7 +6,6 @@ h1 {
 h4 {
   margin-bottom: 0;
   color: red;
-  background-color: lightgray;
 }
 
 ul, ol {
@@ -18,3 +17,56 @@ ul, ol {
   font-size: 9px;
   font-style: italic;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: inline-block;
+  width: 100vw;
+  padding: 1vw;
+}
+
+#block1 {
+  background-color: lightgray;
+  height: ;
+}
+
+#block2 {
+  background-color: lightgray; 
+}
+
+#block3 {
+  background-color: lightgray;
+}
+
+@media (orientation: landscape) {
+  
+  div {
+    width: calc(100vw/3);
+    float: left;
+  }
+  
+    @media screen and (max-width: 575px) {
+     
+    h4 {
+    font-size: 55px;
+  }
+  }
+  
+  div#cookieHeader {
+    background-image: url(images/cookies.jpg);
+    position: relative;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height: 50vh;
+    background-size: cover;
+    background-attachment: fixed;
+  }
